@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giridharan | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home">Giridharan</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">Computer Science Engineering Student</p>
+          <h1>Hi, I am Giridharan. I build web applications and keep learning cloud computing.</h1>
+          <p>
+            I am pursuing Bachelor of Engineering in Computer Science and Engineering at Velammal
+            Institute of Technology. I enjoy learning code, creating useful websites, and improving my
+            full-stack development and cloud computing skills.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#projects">View Projects</a>
+            <a class="secondary-button" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Portfolio highlights">
+          <div>
+            <span>Focus</span>
+            <strong>Full-Stack Development</strong>
+          </div>
+          <div>
+            <span>Learning</span>
+            <strong>Cloud Computing</strong>
+          </div>
+          <div>
+            <span>Tools</span>
+            <strong>Git and GitHub</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Growing as a developer through practice, projects, and continuous learning.</h2>
+        </div>
+        <div class="about-grid">
+          <p>
+            I am Giridharan, a Computer Science and Engineering student at Velammal Institute of
+            Technology. My learning path is focused on understanding how real applications are planned,
+            developed, connected to databases, deployed, and improved over time.
+          </p>
+          <p>
+            I am building a strong foundation in full-stack development with HTML, CSS, JavaScript,
+            Node.js, SQL, MongoDB, and programming basics in Java, Python, C, and C++. I am currently
+            learning cloud computing so I can create applications that are useful, scalable, and ready
+            for real users.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Technologies I know and continue to improve.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript</p>
+          </article>
+          <article class="skill-card">
+            <h3>Backend</h3>
+            <p>Node.js, Express.js, Java basics, Python basics</p>
+          </article>
+          <article class="skill-card">
+            <h3>Databases</h3>
+            <p>SQL, MongoDB</p>
+          </article>
+          <article class="skill-card">
+            <h3>Programming</h3>
+            <p>Java with data structure basics, C basics, C++ basics</p>
+          </article>
+          <article class="skill-card">
+            <h3>Cloud</h3>
+            <p>Currently learning cloud computing and deployment concepts</p>
+          </article>
+          <article class="skill-card">
+            <h3>Version Control</h3>
+            <p>Git, GitHub</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section project-section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Manage portfolio projects directly from the website.</h2>
+        </div>
+
+        <div class="project-layout">
+          <form class="project-form" id="projectForm">
+            <h3>Add Project</h3>
+            <label>
+              Project title
+              <input type="text" id="projectTitle" required placeholder="Example: Student Result App" />
+            </label>
+            <label>
+              Description
+              <textarea id="projectDescription" required placeholder="Write a short project summary"></textarea>
+            </label>
+            <label>
+              Technologies
+              <input type="text" id="projectTech" placeholder="HTML, CSS, JavaScript, MongoDB" />
+            </label>
+            <label>
+              Project link
+              <input type="url" id="projectLink" placeholder="https://github.com/your-project" />
+            </label>
+            <label>
+              Admin password
+              <input type="password" id="projectPassword" required placeholder="Enter password" />
+            </label>
+            <button class="primary-button" type="submit">Add Project</button>
+            <p class="form-message" id="formMessage" role="status"></p>
+          </form>
+
+          <div class="projects-list" id="projectsList">
+            <p class="loading-text">Loading projects...</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Let us connect for learning, collaboration, and development opportunities.</h2>
+        </div>
+        <div class="contact-box">
+          <div>
+            <span>Email</span>
+            <a id="contactEmail" href="mailto:giridharan@example.com">giridharan@example.com</a>
+          </div>
+          <p id="contactDescription">Loading contact description...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Giridharan. Built with HTML, CSS, JavaScript, Node.js, and MongoDB.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
